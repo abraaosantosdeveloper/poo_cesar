@@ -1,10 +1,14 @@
 public class App {
     public static void main(String[] args) throws Exception {
         double[] listaNumeros = { 10.0, 8.0 };
+        double[] listaNumeros2 = { 10.0, 8.0, 21.0, 14.0, 11.5 };
         int numero = 5;
 
         // testes MathLib
         System.out.println(MathLib.soma(listaNumeros[0], listaNumeros[1])); // 18
+        System.out.println(MathLib.somatorio(listaNumeros2)); // 64,5
+        System.out.println(MathLib.somatorio_var_args(listaNumeros2)); // 64,5
+        System.out.println(MathLib.somatorio_var_args(7, 3, 1, 10, 20, 15, 19)); // 75
         System.out.println(MathLib.media(listaNumeros)); // 9.0
         System.out.println(MathLib.ehPrimo(numero)); // True
 
