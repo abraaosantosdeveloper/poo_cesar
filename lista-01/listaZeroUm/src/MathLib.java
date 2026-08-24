@@ -9,6 +9,28 @@ public class MathLib {
         return a + b;
     }
 
+    // Soma dinâmica
+    public static double somatorio(double numeros[]) {
+        double acumulador = 0;
+
+        for (int i = 0; i < numeros.length; i++) {
+            acumulador += numeros[i];
+        }
+
+        return acumulador;
+    }
+
+    // soma dinâmica com varargs
+    public static double somatorio_var_args(double... numeros) {
+        double acumulador = 0;
+
+        for (double n : numeros) {
+            acumulador += n;
+        }
+
+        return acumulador;
+    }
+
     public static double media(double[] numeros) {
         // Acumulador para somar os valores do vetor recebido
         double acumulador = 0;
