@@ -9,6 +9,7 @@ public class App {
         System.out.println(MathLib.somatorio(listaNumeros2)); // 64,5
         System.out.println(MathLib.somatorio_var_args(listaNumeros2)); // 64,5
         System.out.println(MathLib.somatorio_var_args(7, 3, 1, 10, 20, 15, 19)); // 75
+        System.out.println(MathLib.multiplicacao(7, 3, 1, 10, 20, 15, 19)); // 1.197.000
         System.out.println(MathLib.media(listaNumeros)); // 9.0
         System.out.println(MathLib.ehPrimo(numero)); // True
 

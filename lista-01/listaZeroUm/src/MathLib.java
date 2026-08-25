@@ -31,6 +31,16 @@ public class MathLib {
         return acumulador;
     }
 
+    // Multiplicação em cascata (dinâmica)
+    public static double multiplicacao(double... numeros) {
+        double acumulador = 1;
+        for (double n : numeros) {
+            acumulador *= n;
+        }
+
+        return acumulador;
+    }
+
     public static double media(double[] numeros) {
         // Acumulador para somar os valores do vetor recebido
         double acumulador = 0;
